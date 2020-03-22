@@ -1,0 +1,184 @@
+.activity {
+
+    &-event {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 3px;
+            left: 26px;
+            background-color: $gray-300;
+        }
+
+        &:last-child::before {
+            content: '';
+            position: absolute;
+            height: 10%;
+            width: 3px;
+            left: 26px;
+            background-color: $gray-300;
+        }
+
+        &-media {
+            z-index: 10;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .activity-event:first-child &-media {
+            padding-top: 0;
+        }
+
+        &-content {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .activity-event:first-child &-content {
+            padding-top: 0;
+        }
+
+        &-avatar {
+            height: calc(3rem + 6px);
+            width: calc(3rem + 6px);
+            border-radius: 50%;
+            border: 3px solid $white;
+            margin-top: -4px;
+
+            &.has-icon {
+                color: $primary;
+                background-color: lighten($primary, 40%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &.has-image {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+            }
+        }
+
+        &-date {
+            color: $gray-600;
+            font-size: .875rem;
+        }
+
+        .actor {
+            color: $primary;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(.13, .67, .33, .98);
+
+            &:hover {
+                color: lighten($color: $primary, $amount: 20%);
+            }
+        }
+
+        .assignee {
+            color: $primary;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(.13, .67, .33, .98);
+
+            &:hover {
+                color: lighten($color: $primary, $amount: 20%);
+            }
+        }
+
+        .status-in-progress {
+            color: $yellow;
+            background-color: lighten($yellow, 40%);
+            padding: 0 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(.13, .67, .33, .98);
+
+            &:hover {
+                color: darken($color: $yellow, $amount: 7.5%);
+            }
+        }
+
+        .status-answered {
+            color: $green;
+            background-color: lighten($green, 40%);
+            padding: 0 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(.13, .67, .33, .98);
+
+            &:hover {
+                color: darken($color: $green, $amount: 7.5%);
+            }
+        }
+
+        .answer {
+            color: $teal;
+            background-color: lighten($teal, 40%);
+            padding: 0 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(.13, .67, .33, .98);
+
+            &:hover {
+                color: darken($color: $teal, $amount: 7.5%);
+            }
+        }
+    }
+}
+
+.ticket-card {
+    cursor: pointer;
+    font-size: .875rem;
+
+    &-overly {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 25%;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7959558823529411) 35%, rgba(255, 255, 255, 0) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        transition: all 0.2s cubic-bezier(.13, .67, .33, .98);
+
+        .feather {
+            color: $primary;
+            opacity: 0;
+            transition: all 0.2s cubic-bezier(.13, .67, .33, .98);
+        }
+    }
+}
+
+.ticket-card:hover {
+
+    .ticket-card-overly {
+        height: 75%;
+    }
+
+    .feather {
+        opacity: 1;
+    }
+}
+
+.priority-high {
+    color: $yellow;
+    background-color: lighten($yellow, 40%);
+    font-weight: bold;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.note-card {
+    background-color: lighten($color: $yellow, $amount: 50%);
+}

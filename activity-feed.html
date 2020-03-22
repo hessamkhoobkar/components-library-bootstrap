@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Feed</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Components library</a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column pt-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">
+                                <span data-feather="home"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./activity-feed.html">
+                                <span data-feather="activity"></span>
+                                Activity Feed <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap pt-4 pb-2 mb-4 border-bottom">
+                    <div>
+                        <h1>Activity Feed</h1>
+                        <p>A Off-Canvas Menu or sidebar component. A summary of everything that's happened in an ordered
+                            sequence.</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-primary active">
+                                <input type="radio" name="options" id="option1" checked> HTML
+                            </label>
+                            <label class="btn btn-outline-primary">
+                                <input type="radio" name="options" id="option2"> Vue
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-4 pb-2 mb-4">
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <h5 class="card-header">Ticket history</h5>
+                            <div class="card-body">
+                                <div class="activity-timeline">
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1581625991440-291cfd5c171c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=top&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">
+                                                    @Amelia Hamilton
+                                                </span>
+                                                created a ticket
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                            <div class="ticket-card card">
+                                                <div class="card-body d-flex justify-content-between flex-wrap">
+                                                    <p>
+                                                        Ticket ID : #23809
+                                                    </p>
+                                                    <p class="priority-high">
+                                                        Priority : !! Medium
+                                                    </p>
+                                                    <p class="h6 w-100 m-0">
+                                                        Ticket title : The weight is calculated twice after changing the
+                                                        conditions
+                                                    </p>
+
+                                                </div>
+                                                <div class="ticket-card-overly rounded">
+                                                    <span data-feather="external-link"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-icon">
+                                                <span data-feather="info"></span>
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">@AriTheRobot</span>
+                                                assigned the ticket to
+                                                <span class="assignee">@Miranda Raybould</span>
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1562774061-f7337109c453?ixlib=rb-1.2.1&q=80&fm=jpg&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">@Miranda Raybould</span>
+                                                submitted a message
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                            <p class="message">
+                                                It's unfortunate that we counter this issue. We will investigate the
+                                                cause and will fix it as soon as possible.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1562774061-f7337109c453?ixlib=rb-1.2.1&q=80&fm=jpg&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">@Miranda Raybould</span>
+                                                changed the status to
+                                                <span class="status-in-progress">In Progress</span>
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1562774061-f7337109c453?ixlib=rb-1.2.1&q=80&fm=jpg&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">@Miranda Raybould</span>
+                                                added
+                                                <span class="assignee">@James Taylor</span>
+                                                as a contributor
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1562774061-f7337109c453?ixlib=rb-1.2.1&q=80&fm=jpg&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">@Miranda Raybould</span>
+                                                wrote a note
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                            <div class="note-card card border-warning mb-3">
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        Hi James. <br>
+                                                        Please check the source of the issue, and if possible, fix it.
+                                                        <br>
+                                                        And remember to log the cause to help us to avoid it in the
+                                                        future.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <p class="h6" class="activity-event-title">
+                                                <span class="actor">@James Taylor</span>
+                                                submitted an
+                                                <span class="answer">answer with confirmation</span>
+                                            </p>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                            <p>
+                                                The bug was the result of our last patch. <br>
+                                                Unfortunately, there is a patch missing in your files, and the last
+                                                update has dependencies on that missing patch.<br>
+                                                The solution is to repatch and update your server.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1562774061-f7337109c453?ixlib=rb-1.2.1&q=80&fm=jpg&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">@Miranda Raybould</span>
+                                                accepted the answer
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1562774061-f7337109c453?ixlib=rb-1.2.1&q=80&fm=jpg&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">@Miranda Raybould</span>
+                                                changed the status to
+                                                <span class="status-answered">Answered</span>
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-event">
+                                        <div class="activity-event-media mr-4">
+                                            <div class="activity-event-avatar has-image"
+                                                style="background-image: url(https://images.unsplash.com/photo-1581625991440-291cfd5c171c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=top&cs=tinysrgb&w=200&h=200&fit=facearea&facepad=2.2&ixid=eyJhcHBfaWQiOjF9);">
+                                            </div>
+                                        </div>
+                                        <div class="activity-event-content">
+                                            <h6 class="activity-event-title">
+                                                <span class="actor">
+                                                    @Amelia Hamilton
+                                                </span>
+                                                you need to review the ticket
+                                            </h6>
+                                            <p class="activity-event-date">
+                                                12/02/2020
+                                            </p>
+                                            <h5 class="card-title">Is your problem solved?</h5>
+                                            <p class="card-text">
+                                                If you are satisfied with the answer, please close the ticket, and if
+                                                not, change the state of the ticket and add the reason.
+                                            </p>
+                                            <a href="#" class="btn btn-success btn-block">Close the ticket</a>
+                                            <a href="#" class="btn btn-outline-secondary btn-block">Reopen the
+                                                ticket</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap-native.min.js"></script>
+    <script src="./js/polyfill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
