@@ -9882,6 +9882,76 @@ h3 {
     padding-top: 48px;
   }
 }
+.navbar.breathe {
+  padding: 1.5rem 2rem;
+}
+.navbar.breathe * {
+  transition: all 0.2s ease;
+}
+
+.navbar-light.breathe .form-control {
+  color: #425A70;
+  background-color: transparent;
+  border: 1px solid #425A70;
+  opacity: 0.4;
+}
+.navbar-light.breathe .form-control::placeholder {
+  color: #425A70;
+}
+.navbar-light.breathe .form-control:disabled, .navbar-light.breathe .form-control[readonly] {
+  background-color: transparent;
+}
+.navbar-light.breathe .form-control:focus {
+  opacity: 1;
+}
+
+.navbar-dark.breathe .btn-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark.breathe .btn-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark.breathe .btn-light {
+  color: #5c6ac4;
+}
+.navbar-dark.breathe .btn-light:hover {
+  color: #202e78;
+}
+.navbar-dark.breathe .form-control {
+  color: #F5F6F7;
+  background-color: transparent;
+  border: 1px solid #F5F6F7;
+  opacity: 0.6;
+}
+.navbar-dark.breathe .form-control::placeholder {
+  color: #F5F6F7;
+}
+.navbar-dark.breathe .form-control:disabled, .navbar-dark.breathe .form-control[readonly] {
+  background-color: transparent;
+}
+.navbar-dark.breathe .form-control:focus {
+  opacity: 1;
+}
+.navbar-dark.breathe.border {
+  border: 1px solid rgba(32, 46, 120, 0.3) !important;
+}
+.navbar-dark.breathe.border-top {
+  border-top: 1px solid rgba(32, 46, 120, 0.3) !important;
+}
+.navbar-dark.breathe.border-right {
+  border-right: 1px solid rgba(32, 46, 120, 0.3) !important;
+}
+.navbar-dark.breathe.border-bottom {
+  border-bottom: 1px solid rgba(32, 46, 120, 0.3) !important;
+}
+.navbar-dark.breathe.border-left {
+  border-left: 1px solid rgba(32, 46, 120, 0.3) !important;
+}
+
+.navbar {
+  box-shadow: 0 0.125rem 0.25rem rgba(35, 67, 97, 0.075);
+}
+
 .sidebar .feather {
   height: 16px;
   width: 16px;
